@@ -1,14 +1,70 @@
 <html>
-    <h1>
-        <b>Reasons to Choose Us</b>
-    </h1>
-    <p>
-        Come play <span style = "color:greenyellow"><i>Laser Tag</i></span> with us for:
-    </p>
-    <ul style="background-color: grey">
-        <li>State of the art equipment</li>
-        <li>Friendly staff</li>
-        <li>Match recordings available to purchase</li>
-        <li>Buy two games get one free.</li>
-    </ul>
+    <head>
+        <title>Laser Tag</title>
+    </head>
+    <body>
+        <h1>
+            <b>Reasons to Choose Us</b>
+        </h1>
+
+        <p>
+            Come play <i style = "color:green">Laser Tag</i> with us for:
+        </p>
+
+        <ul style="background-color:lightgrey">
+            <li>State of the art equipment</li>
+            <li>Friendly staff</li>
+            <li>Match recordings available to purchase</li>
+            <li>Buy two games get one free.</li>
+        </ul>
+
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br><br>
+            
+            <label for="year12">Year 12</label>
+            <input type="radio" id="year12" name="yearGroups">
+            <label for="year13">Year 13</label>
+            <input type="radio" id="year13" name="yearGroups"><br><br>
+
+            
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender">
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender">
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender"><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+
+            let silly = false
+            let gender = "Male"
+
+            if (silly == true){
+                console.log("in ifstatement")
+                alert("Your computer has virus")
+                alert("I'm in your walls")
+                alert("    :D    ")
+            }
+
+            if (gender == "Male"){
+                console.log("Mr.")
+            } else if (gender == "Female"){
+                console.log("Ms.")
+            } else {
+                console.log("Other")
+            }
+
+            for (let i=0; i<5; i++){
+                console.log(gender)
+            }
+        
+        </script>
+
+    </body>
 </html>
