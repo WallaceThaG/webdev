@@ -1,0 +1,25 @@
+<html>
+    <body>
+        
+        <h1>The Document Object</h1>
+        <h2>Using the getElementById() Method</h2>
+        
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname">
+            <button type="button" onclick=changeName()>Click Me</button>
+        </form>
+
+        <p id="newName"></p>
+
+        <script>
+
+            function changeName() {
+                var first_name = document.getElementById("fname").value
+                document.getElementById("newName").innerHTML = first_name
+            }
+
+        </script>
+
+    </body>
+</html>
